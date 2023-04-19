@@ -84,6 +84,22 @@ export default function Home() {
               <Button variant="link" data-text="länk">Länk</Button> <Button variant="link" data-text="länk">Nedtryckt</Button> <Button variant="link" disabled data-text="länk">Inaktiverad</Button>
             </Col>
           </Row>
+          <Row className="mb-4">
+            <Col className="bg-dark">
+              <h6 className="text-light">Mörk</h6>
+            </Col>
+            <Col className="bg-dark">
+              <h6 className="text-light">Mörk</h6>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col className="bg-light">
+              <h6>Ljus</h6>
+            </Col>
+            <Col className="bg-light">
+              <h6>Ljus</h6>
+            </Col>
+          </Row>
         </Container>
       </main>
     </>

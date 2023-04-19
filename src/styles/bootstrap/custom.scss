@@ -13,11 +13,24 @@
   --bs-body-color-rgb: 0, 0, 0;
   --bs-body-secondary-color: #{$ljus};
   --bs-body-secondary-color-rgb: 245, 245, 245;
+
   --bs-primary: #{$ringblomma};
   --bs-primary-rgb: 217, 136, 30;
   --bs-primary-bg-subtle: rgba(217, 136, 30, 0.1);
   --bs-primary-border-subtle: rgba(217, 136, 30, 0.2);
   --bs-primary-text-emphasis: rgba(217, 136, 30, 0.9);
+
+  --bs-light: #{$ljus};
+  --bs-light-rgb: 245, 245, 245;
+  --bs-light-bg-subtle: rgba(245, 245, 245, 0.1);
+  --bs-light-border-subtle: rgba(245, 245, 245, 0.2);
+  --bs-light-text-emphasis: rgba(245, 245, 245, 0.9);
+  
+  --bs-dark: #{$natt};
+  --bs-dark-rgb: 22, 21, 20;
+  --bs-dark-bg-subtle: rgba(22, 21, 20, 0.1);
+  --bs-dark-border-subtle: rgba(22, 21, 20, 0.2);
+  --bs-dark-text-emphasis: rgba(22, 21, 20, 0.9);
 }
 
 .btn {

@@ -14,3 +14,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WANGKRAFT_B669E }}'
           projectId: wangkraft-b669e
+          FIREBASE_CLI_EXPERIMENTS: webframeworks

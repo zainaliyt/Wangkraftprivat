@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import styles from '@/components/styles/Home.module.css';
-
-const inter = Inter({ subsets: ['latin'] });
+import Link from 'next/link';
+import {
+  Button,
+  Col, Container, ListGroup, Row,
+} from 'react-bootstrap';
 
 export default function Home() {
   return (
@@ -14,100 +14,77 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.tsx</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
-        </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+      <main>
+        <Container>
+          <Row className="mb-4">
+            <Col>
+              <h1>Welcome to Wängkraft</h1>
+              <p>Kom ihåg att köra <code>git pull</code> samt <code>npm i</code>.</p>
+              <p>Rekommenderade utvecklarverktyg:</p>
+              <ListGroup>
+                <ListGroup.Item action href="https://github.com/features/copilot">Co-pilot</ListGroup.Item>
+                <ListGroup.Item action href="https://github.com/aaron-bond/better-comments">Better Comments</ListGroup.Item>
+                <ListGroup.Item action href="https://www.gitkraken.com/gitlens">Git Lens</ListGroup.Item>
+                <ListGroup.Item action href="https://quokkajs.com/docs/index.html">Quokka</ListGroup.Item>
+                <ListGroup.Item action href="https://github.com/octref/polacode">Polacode</ListGroup.Item>
+                <ListGroup.Item action href="https://github.com/ChristianKohler/PathIntellisense">Path IntelliSense</ListGroup.Item>
+                <ListGroup.Item action href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server">Live Preview</ListGroup.Item>
+                <ListGroup.Item action href="https://react.dev/learn/react-developer-tools">React Developer Tools</ListGroup.Item>
+              </ListGroup>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col>
+              <h2>Github och Live preview</h2>
+              <p>Vår <mark>main</mark> branch är ansluten till en live preview
+              hostad hos <mark>firebase</mark>.<br />
+              För att besöka live versionen kan du klicka in på <Link href="https://wangkraft-b669e.web.app/">länk</Link>.<br />
+              När en uppdatering mergas från <mark>dev</mark> till <mark>main</mark>
+              &nbsp;så deployas den automatiskt.</p>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col>
+              <h3>Frameworks</h3>
+              <p>Projektet använder sig av Bootstrap 5.x samt React-Bootstrap.<br />
+              Det gör att vi får tillgång till snabba utvecklingsmetoder och
+              kan påskynda stylingen.<br />
+              För att använda Bootstrap kan du besöka deras Wiki: <a href="https://getbootstrap.com/docs/5.3">länk.</a><br />
+              För att använda React-Bootstrap kan du besöka deras Wiki: <a href="https://react-bootstrap.github.io/getting-started/introduction">länk.</a></p>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col>
+              <h4 className="text-primary">Primär färg</h4>
+            </Col>
+            <Col className="bg-primary">
+              <h4>Primär färg</h4>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col>
+              <h5 className="text-secondary">Sekundär färg / Ej konfigurerad</h5>
+            </Col>
+            <Col className="bg-secondary">
+              <h5>Sekundär färg / Ej konfigurerad</h5>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col>
+            <Button>Knapp</Button> <Button>Nedtryckt</Button> <Button disabled>Inaktiverad</Button>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col>
+            <Button variant="secondary">Knapp</Button> <Button variant="secondary">Nedtryckt</Button> <Button variant="secondary" disabled>Inaktiverad</Button>
+            </Col>
+          </Row>
+          <Row className="mb-4">
+            <Col>
+              <Button variant="link" data-text="länk">Länk</Button> <Button variant="link" data-text="länk">Nedtryckt</Button> <Button variant="link" disabled data-text="länk">Inaktiverad</Button>
+            </Col>
+          </Row>
+        </Container>
       </main>
     </>
   );

@@ -1,0 +1,105 @@
+// Bootstrap import
+@import '~bootstrap/scss/bootstrap';
+
+  $natt: #161514;
+  $ljus: #FEFEFE;
+  $ringblomma: #D9881E;
+  $falurod: #8B3B24;
+  $inaktiv: #DEDEDE;
+  $inaktiv-text: #ADADAD;
+:root {
+  --bs-body-font-family: 'Roboto', sans-serif;
+  --bs-body-color: #{$natt};
+  --bs-body-color-rgb: 0, 0, 0;
+  --bs-body-secondary-color: #{$ljus};
+  --bs-body-secondary-color-rgb: 245, 245, 245;
+  --bs-primary: #{$ringblomma};
+  --bs-primary-rgb: 217, 136, 30;
+  --bs-primary-bg-subtle: rgba(217, 136, 30, 0.1);
+  --bs-primary-border-subtle: rgba(217, 136, 30, 0.2);
+  --bs-primary-text-emphasis: rgba(217, 136, 30, 0.9);
+}
+
+.btn {
+  --bs-btn-border-width: 2px;
+  --bs-btn-padding-x: 40px;
+  --bs-btn-padding-y: 15px;
+  --bs-btn-border-radius: 15px;
+}
+
+.btn-primary {
+  --bs-btn-bg: #{$ringblomma};
+  --bs-btn-color: #{$ljus};
+  --bs-btn-border-color: #{$ringblomma};
+
+  --bs-btn-active-bg: #{$ringblomma};
+  --bs-btn-active-color: #{$ljus};
+  --bs-btn-active-border-color: #{$ringblomma};
+  
+  --bs-btn-hover-bg: #{$falurod};
+  --bs-btn-hover-color: #{$ljus};
+  --bs-btn-hover-border-color: #{$falurod};
+
+  --bs-btn-disabled-bg: #{$inaktiv};
+  --bs-btn-disabled-color: #{$inaktiv-text};
+  --bs-btn-disabled-border-color: #{$inaktiv};
+}
+
+.btn-secondary {
+  --bs-btn-bg: transparent;
+  --bs-btn-color: #{$ringblomma};
+  --bs-btn-border-color: #{$ringblomma};
+
+  --bs-btn-active-bg: rgba(217, 136, 30, 0.1);
+  --bs-btn-active-color: #{$ringblomma};
+  --bs-btn-active-border-color: #{$ringblomma};
+
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-color: #{$falurod};
+  --bs-btn-hover-border-color: #{$falurod};
+
+  --bs-btn-disabled-bg: #{$inaktiv};
+  --bs-btn-disabled-color: #{$inaktiv-text};
+  --bs-btn-disabled-border-color: #{$inaktiv};
+}
+
+.btn-link {
+  --bs-btn-bg: transparent;
+  --bs-btn-color: #{$natt};
+  --bs-btn-border-color: transparent;
+  text-decoration: none;
+
+  --bs-btn-active-bg: transparent;
+  --bs-btn-active-color: #{$natt};
+  --bs-btn-active-border-color: transparent;
+
+  --bs-btn-hover-bg: transparent;
+  --bs-btn-hover-color: #{$ringblomma};
+  --bs-btn-hover-border-color: transparent;
+
+  --bs-btn-disabled-bg: #{$inaktiv};
+  --bs-btn-disabled-color: #{$inaktiv-text};
+  --bs-btn-disabled-border-color: #{$inaktiv};
+}
+
+.btn-link:active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.btn-link::after {
+  content: attr(text);
+  font-weight: 700;
+  height: 0;
+  visibility: hidden;
+  display:block;
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h4, h5, h6 {
+  font-weight: 600;
+}

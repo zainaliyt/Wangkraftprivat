@@ -33,6 +33,15 @@
   --bs-dark-text-emphasis: rgba(22, 21, 20, 0.9);
 }
 
+.bg-change{
+  background-color: #D9881E;
+}
+
+.text-change a{
+  color: white!important;
+}
+
+
 .btn {
   --bs-btn-border-width: 2px;
   --bs-btn-padding-x: 40px;
@@ -75,6 +84,7 @@
   --bs-btn-disabled-color: #{$inaktiv-text};
   --bs-btn-disabled-border-color: #{$inaktiv};
 }
+
 
 .btn-link {
   --bs-btn-bg: transparent;

@@ -23,15 +23,15 @@ function Navigation() {
 
   return (
     <Navbar
-  variant={navbarBackground === 'dark' ? 'light' : 'dark'}
-  expand="lg"
-  className={
-    navbarBackground === 'dark' ? 'bg-change fixed-top' : 'fixed-top'
-  }
-  collapseOnSelect={true}
-  onToggle={(expanded) => setIsMobileMenuOpen(expanded)}
-  bg={isMobileMenuOpen ? 'change bg-dark' : ''}
->
+      variant={navbarBackground === 'dark' ? 'light' : 'dark'}
+      expand="md"
+      className={
+        navbarBackground === 'dark' ? 'bg-change fixed-top' : 'fixed-top'
+      }
+      collapseOnSelect={true}
+      onToggle={(expanded) => setIsMobileMenuOpen(expanded)}
+      bg={isMobileMenuOpen ? 'change bg-dark' : ''}
+    >
       <Container>
         <Navbar.Brand href="#home">
           <img
@@ -45,12 +45,12 @@ function Navigation() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" className="bg-primary" />
         <Navbar.Collapse id="basic-navbar-nav" className="text-center">
           <Nav className="mx-auto">
-            <NavDropdown title="Våra produkter" id="navbarDropdownMenuLink1" className={`${isMobileMenuOpen ? 'text-change' : ''}`}>
+            <NavDropdown title="Våra produkter" id="navbarDropdownMenuLink1" className={`me-md-3 ${isMobileMenuOpen ? 'text-change' : ''}`}>
               <NavDropdown.Item href="#">Action</NavDropdown.Item>
               <NavDropdown.Item href="#">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
             </NavDropdown>
-            <NavDropdown title="Om oss" id="navbarDropdownMenuLink2" className={`ms-3 me-3 ${isMobileMenuOpen ? 'text-change' : ''}`}>
+            <NavDropdown title="Om oss" id="navbarDropdownMenuLink2" className={`me-md-3 ms-md-3 ${isMobileMenuOpen ? 'text-change' : ''}`}>
               <NavDropdown.Item href="#">Action</NavDropdown.Item>
               <NavDropdown.Item href="#">Another action</NavDropdown.Item>
               <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
@@ -61,12 +61,15 @@ function Navigation() {
               <NavDropdown.Item href="#">Something else here</NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Button variant={navbarBackground === 'dark' ? 'dark' : 'primary'}>Call to action</Button>
+          <Button variant={navbarBackground === 'dark' ? 'dark' : 'primary'} className="btn-sm px-3">Call to action</Button>
         </Navbar.Collapse>
       </Container>
       
     </Navbar>
+    
   );
 }
+
+
 
 export default Navigation;

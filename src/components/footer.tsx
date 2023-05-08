@@ -60,7 +60,7 @@ const Footer = () => {
                 <div className="my-4 py-2 border-top border-light"></div>
 
                 <Row className="my-4 justify-content-between">
-                    <Col className="text-start">
+                    <Col className="text-center text-md-start text-sm-center">
                         <ul className="list-unstyled d-flex justify-content-between mb-0" style={{ maxWidth: '90px' }}>
                             <li><Facebook size={20} /></li>
                             <li><Instagram size={20} /></li>
@@ -68,10 +68,10 @@ const Footer = () => {
                         </ul>
                     </Col>
 
-                    <Col className="text-center" xs={6}>
+                    <Col className="text-center mb-md-0" md={6} xs={12}>
                         <p className="mb-3 mb-md-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </Col>
-                    <Col className="text-end">
+                    <Col className="text-center text-md-end text-sm-center" >
                         <img src="/images/certificat.jpg" alt="Image" className="mb-4" />
                     </Col>
                 </Row>

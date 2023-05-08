@@ -81,7 +81,7 @@ function ProdukterSection() {
             </ListGroup>
           </Col>
           <Col className="d-flex justify-content-center align-items-center">
-            <Image src={"/images/produkter.png"} alt="imesg" width={500} height={500} className="img-fluid mx-auto" style={{ objectFit: "cover", height: "100%", width:"100%"}} />
+            <Image src={"/images/produkter.png"} alt="produkter" width={500} height={500} className="img-fluid mx-auto" style={{ objectFit: "cover", height: "100%", width:"100%"}} />
           </Col>
         </Row>
 
